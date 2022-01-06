@@ -13,7 +13,7 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
- @Client.on_message(filters.private & filters.command(["link"]))
+@Client.on_message(filters.private & filters.command(["link"]))
 async def gen_link_s(bot, message):
     replied = message.reply_to_message
     if not replied:
